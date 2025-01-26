@@ -10,8 +10,8 @@ let package = Package(
         .library(name: "CrudRouter", targets: ["CrudRouter"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", from: "4.110.1"),
-        .package(url: "https://github.com/vapor/fluent.git", from: "4.9.0"),
+        .package(url: "https://github.com/vapor/vapor.git", from: "4.112.0"),
+        .package(url: "https://github.com/vapor/fluent.git", from: "4.12.0"),
         .package(url: "https://github.com/vapor/fluent-sqlite-driver.git", from: "4.5.2"),
     ],
     targets: [
