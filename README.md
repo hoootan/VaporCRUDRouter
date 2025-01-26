@@ -7,15 +7,22 @@ Within your Package.swift
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/twof/VaporCRUDRouter.git", from: "1.0.0")
+    .package(url: "https://github.com/twof/VaporCRUDRouter.git", from: "4.0.1")
 ]
 ```
 and
 
 ```swift
 targets: [
-    .target(name: "App", dependencies: ["CrudRouter"]),
-]
+    .executableTarget(
+        name: "App",
+        dependencies: [
+            .product(name: "CrudRouter", package: "VaporCRUDRouter"),
+            ...
+        ],
+    ),
+    ...
+],
 ```
 
 ## Usage
